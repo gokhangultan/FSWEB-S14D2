@@ -22,10 +22,10 @@ public class Main {
 
         Wall[] walls = {northWall, eastWall, westWall, southWall};
 
-        BedRoom bedRoom = new BedRoom(northWall, eastWall, southWall,
+        Bedroom bedRoom = new Bedroom(northWall, eastWall, southWall,
                 westWall, ceiling, lamp,
-                new Carpet(PaintColor.WHITE, 100, 200), "bedroom1", bed,
-                new Wardrobe());
+                new Carpet(100, 200, PaintColor.WHITE), "bedroom1", bed,
+                new Wardrobe(1, 2, 12));
         System.out.println(bedRoom);
         bedRoom.createBedroom();
 

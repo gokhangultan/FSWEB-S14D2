@@ -3,19 +3,19 @@ package org.example.model;
 import org.example.model.enums.PaintColor;
 
 public class Carpet {
-    private PaintColor paintColor;
+    private PaintColor color;
     private int width;
     private int height;
 
 
-    public Carpet(PaintColor paintColor, int width, int height) {
-        this.paintColor = paintColor;
+    public Carpet( int width, int height,PaintColor color) {
+        this.color = color;
         this.width = width;
         this.height = height;
     }
 
-    public PaintColor getPaintColor() {
-        return paintColor;
+    public PaintColor getColor() {
+        return color;
     }
 
     public int getWidth() {
@@ -33,7 +33,7 @@ public class Carpet {
     @Override
     public String toString() {
         return "Carpet{" +
-                "paintColor=" + paintColor +
+                "paintColor=" + color +
                 ", width=" + width +
                 ", height=" + height +
                 '}';

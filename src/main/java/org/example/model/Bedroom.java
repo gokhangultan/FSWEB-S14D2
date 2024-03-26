@@ -1,12 +1,12 @@
 package org.example.model;
 
-public class BedRoom extends Room {
+public class Bedroom extends Room {
 
     private String name;
     private Bed bed;
     private Wardrobe wardrobe;
 
-    public BedRoom(Wall wall1, Wall wall2, Wall wall3,
+    public Bedroom(Wall wall1, Wall wall2, Wall wall3,
                    Wall wall4, Ceiling ceiling, Lamp lamp,
                    Carpet carpet, String name, Bed bed,
                    Wardrobe wardrobe) {
